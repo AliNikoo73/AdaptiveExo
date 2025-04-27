@@ -19,27 +19,79 @@ Our research has yielded several important findings:
 
 Optimized exoskeleton parameters can reduce metabolic cost by up to 30% compared to baseline conditions:
 
-![Metabolic Cost Reduction](results/figures/metabolic_cost_reduction.png)
+<img src="./results/figures/metabolic_cost_reduction.png" alt="Metabolic Cost Reduction" width="600"/>
+
+Distribution of metabolic cost across all subjects and configurations:
+
+<img src="./results/custom_figures/metabolic_cost_distribution.png" alt="Metabolic Cost Distribution" width="600"/>
 
 ### Subject-Specific Adaptation
 
 Different subjects require distinct parameter configurations for optimal assistance:
 
-![Subject Adaptation](results/figures/subject_adaptation_summary.png)
+<img src="./results/figures/subject_adaptation_summary.png" alt="Subject Adaptation" width="600"/>
+
+Relationship between subject demographics and metabolic cost:
+
+<img src="./results/custom_figures/demographics_vs_cost.png" alt="Demographics vs Cost" width="600"/>
 
 ### Parameter Optimization 
 
 Machine learning models can successfully predict optimal exoskeleton parameters from user characteristics:
 
-![Parameter Comparison](results/comparison/parameter_comparison_normalized.png)
+<img src="./results/comparison/parameter_comparison_normalized.png" alt="Parameter Comparison" width="600"/>
+
+Parameter distributions across all configurations:
+
+<img src="./results/custom_figures/parameter_distributions.png" alt="Parameter Distributions" width="600"/>
+
+Parameter correlations and their impact on metabolic cost:
+
+<img src="./results/custom_figures/parameter_correlations.png" alt="Parameter Correlations" width="600"/>
+
+Parallel coordinates plot showing optimal parameters across subjects:
+
+<img src="./results/custom_figures/optimal_parameters_parallel.png" alt="Optimal Parameters Parallel" width="600"/>
+
+Parameter relationships through pair plots:
+
+<img src="./results/custom_figures/parameter_pairplots.png" alt="Parameter Pairplots" width="600"/>
+
+Radar comparison of different parameter configurations:
+
+<img src="./results/comparison/parameter_radar_comparison.png" alt="Parameter Radar Comparison" width="600"/>
 
 ### Optimized Control Profiles
 
 Our models generate individualized torque profiles tailored to each user's biomechanics:
 
-![Torque Profiles](results/figures/subject_10_torque_profiles.png)
+<img src="./results/figures/subject_10_torque_profiles.png" alt="Torque Profiles" width="600"/>
 
-For detailed results and analysis, see the [Scientific Report](docs/scientific_report.md).
+Subject-specific parameter radar plot:
+
+<img src="./results/custom_figures/subject_10_radar.png" alt="Subject 10 Radar" width="600"/>
+
+### Predictive Performance
+
+Comparison of predicted vs. actual optimal parameters:
+
+<img src="./results/figures/subject_10_prediction.png" alt="Subject 10 Prediction" width="600"/>
+
+### Efficiency Analysis
+
+Relationship between assistance efficiency and metabolic cost:
+
+<img src="./results/custom_figures/efficiency_vs_cost.png" alt="Efficiency vs Cost" width="600"/>
+
+Comparison of different metrics:
+
+<img src="./results/comparison/metrics_comparison.png" alt="Metrics Comparison" width="600"/>
+
+Different parameter configurations and resulting metabolic costs:
+
+<img src="./results/comparison/metabolic_cost_configurations.png" alt="Metabolic Cost Configurations" width="600"/>
+
+For detailed results and analysis, see the [Scientific Report](./docs/scientific_report.md).
 
 ## Methodology
 
@@ -69,6 +121,7 @@ Our approach follows these key steps:
 ├── results/                    # Results from experiments and simulations
 │   ├── figures/                # Generated visualizations
 │   ├── comparison/             # Comparative analysis results
+│   ├── custom_figures/         # Additional analysis visualizations
 │   └── simulation_results.csv  # Raw simulation data
 ├── docs/                       # Documentation
 │   ├── usage_guide.md          # How to use the framework
@@ -99,8 +152,8 @@ pip install -r requirements.txt
 
 See the documentation in the `docs/` directory for detailed usage instructions:
 
-- [Usage Guide](docs/usage_guide.md): Instructions for running simulations and training models
-- [Scientific Report](docs/scientific_report.md): Detailed analysis of results and findings
+- [Usage Guide](./docs/usage_guide.md): Instructions for running simulations and training models
+- [Scientific Report](./docs/scientific_report.md): Detailed analysis of results and findings
 
 ## Key Findings
 
