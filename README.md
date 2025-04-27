@@ -11,6 +11,36 @@
 
 This repository contains a framework for developing personalized exoskeleton control parameters using machine learning models trained on biomechanical simulation data. The project integrates OpenSim musculoskeletal modeling with machine learning pipelines to predict optimal assistance parameters based on individual user characteristics.
 
+## Key Results
+
+Our research has yielded several important findings:
+
+### Metabolic Cost Reduction
+
+Optimized exoskeleton parameters can reduce metabolic cost by up to 30% compared to baseline conditions:
+
+![Metabolic Cost Reduction](results/figures/metabolic_cost_reduction.png)
+
+### Subject-Specific Adaptation
+
+Different subjects require distinct parameter configurations for optimal assistance:
+
+![Subject Adaptation](results/figures/subject_adaptation_summary.png)
+
+### Parameter Optimization 
+
+Machine learning models can successfully predict optimal exoskeleton parameters from user characteristics:
+
+![Parameter Comparison](results/comparison/parameter_comparison_normalized.png)
+
+### Optimized Control Profiles
+
+Our models generate individualized torque profiles tailored to each user's biomechanics:
+
+![Torque Profiles](results/figures/subject_10_torque_profiles.png)
+
+For detailed results and analysis, see the [Scientific Report](docs/scientific_report.md).
+
 ## Methodology
 
 Our approach follows these key steps:
@@ -37,7 +67,12 @@ Our approach follows these key steps:
 │   └── visualization/          # Visualization tools
 ├── notebooks/                  # Jupyter notebooks for analysis and visualization
 ├── results/                    # Results from experiments and simulations
+│   ├── figures/                # Generated visualizations
+│   ├── comparison/             # Comparative analysis results
+│   └── simulation_results.csv  # Raw simulation data
 ├── docs/                       # Documentation
+│   ├── usage_guide.md          # How to use the framework
+│   └── scientific_report.md    # Detailed results and findings
 ├── environment.yml             # Conda environment specification
 ├── requirements.txt            # Python dependencies
 └── README.md                   # Project overview
@@ -62,7 +97,28 @@ pip install -r requirements.txt
 
 ## Usage
 
-See the documentation in the `docs/` directory for detailed usage instructions.
+See the documentation in the `docs/` directory for detailed usage instructions:
+
+- [Usage Guide](docs/usage_guide.md): Instructions for running simulations and training models
+- [Scientific Report](docs/scientific_report.md): Detailed analysis of results and findings
+
+## Key Findings
+
+Our research demonstrates that:
+
+1. **Personalization is Essential**: Different users require different exoskeleton parameters for optimal assistance
+2. **Machine Learning is Effective**: ML models can successfully predict optimal parameters from user characteristics
+3. **Transfer Learning Reduces Data Requirements**: Pre-trained models can be adapted to new users with minimal additional data
+4. **Significant Metabolic Benefits**: Properly tuned exoskeletons can significantly reduce metabolic cost during walking
+
+## Future Work
+
+Future development will focus on:
+
+1. Validating predictions with experimental human subject testing
+2. Implementing real-time adaptation algorithms
+3. Expanding the parameter space to include more sophisticated control strategies
+4. Incorporating user feedback and preferences into optimization
 
 ## Contributing
 
