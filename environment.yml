@@ -1,9 +1,11 @@
 name: exo-ml
 channels:
   - conda-forge
+  - opensim
   - defaults
 dependencies:
   - python=3.9
+  - opensim=4.4
   - numpy
   - pandas
   - matplotlib
@@ -15,4 +17,5 @@ dependencies:
   - pip:
     - seaborn
     - plotly
-    - opencv-python 
+    - opencv-python
+    - opensim-python-recorder 
